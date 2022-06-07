@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fillViewport="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".description_activity"
+        android:layout_margin="16dp"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:id="@+id/viewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAlignment="center"
+            android:fontFamily="@font/latobold"
+            android:textSize="17dp"
+            android:text="Техника выполнения позы орла Гарудасаны" />
+
+        <TextView
+            android:id="@+id/viewContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/latoregular"
+            app:layout_constraintTop_toBottomOf="@+id/viewTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="
+            1. Встать прямо, стопы вместе, руки вдоль туловища. \n
+            2. Слегка присесть на правой ноге, положить левую ногу на бедро согнутой в колене правой ноги. Обвить левой ногой правую ногу так, чтобы внутренняя поверхность левой стопы была на внутренней поверхности правой голени.\n
+            3. Правую руку уложить в локтевую впадину левой руки. Обвить правой рукой левую и поместите их перед грудью со сложенными вместе ладонями (пальцы направлены вверх). \n
+            4. Локоть левой руки установить на колено левой ноги. \n
+            5. Дыхание в позе спокойное, свободное. \n
+            6. Сознание направить на Анахата-чакру. \n
+            7. Оставаться в этой позе 1-2 минуты. \n
+            8. Затем освободить руки и ноги и вернуться в исходное положение. \n
+            9. Повторить позу, стоя на левой ноге и обвив правой ногой левую ногу, а левой рукой – правую руку. \n
+            10. Выполнять позу в обе стороны равное количество времени.\n " />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/viewContent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/closeBut"
+            android:layout_marginVertical="10dp"/>
+
+        <Button
+            android:id="@+id/closeBut"
+            android:text="Скрыть"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#eee" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
